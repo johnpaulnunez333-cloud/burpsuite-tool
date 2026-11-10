@@ -1,34 +1,40 @@
-# Burp Suite Tool 🛡️
+# BurpSuite Tool
 
-A comprehensive, lightweight, and powerful Python-based HTTP/HTTPS Proxy, Packet Capture, and Security Testing tool inspired by professional penetration testing suites. Designed for security analysis, traffic monitoring, and request manipulation across various environments (including Linux, Kali Linux, and Termux).
+A terminal-based HTTP interception and analysis tool, inspired by Burp Suite. It supports proxy mode, packet capture, and request manipulation, and works on both rooted and non-rooted devices.
 
----
+## Main Menu
 
-## 📸 Screenshots & Preview
+![BurpSuite main menu](Screenshot_20261109_191005.jpg)
 
-### Main Dashboard & Menu Interface
-![Burp Suite Tool Main Interface](Screenshot_20261109_191005.jpg)
+## Features
 
-### Execution & Traffic Monitoring
-![Burp Suite Tool Execution](Screenshot_20261109_191918.jpg)
+| Mode | Description |
+|------|-------------|
+| [1] Automated Scanner | Direct URL scan with security analysis |
+| [2] Packet Sniffer | Network traffic capture (requires root) |
+| [3] View Captured | View intercepted requests |
+| [4] Repeater | Manual request testing |
+| [5] Intruder | Automated fuzzing attack |
+| [6] Export Data | Save all captured requests |
+| [7] Exit | Close BurpSuite |
 
----
+## Additional Screenshot
 
-## ✨ Core Features & Capabilities
+![Screenshot](Screenshot_20261109_191918.jpg)
 
-- 🔥 **Professional HTTP Interception & Analysis**: Inspect and modify HTTP/HTTPS requests and responses in real-time.
-- ⚡ **Proxy Mode**: Acts as a middleman to capture web and application traffic.
-- 📦 **Packet Capture & Logging**: Save and export captured network streams for detailed auditing.
-- 🛡️ **Cross-Platform Support**: Fully compatible with standard Linux distributions, Kali Linux environments, and rooted/non-rooted mobile setups.
+## Requirements
 
----
+- Python 3
+- Root access for the Packet Sniffer mode (other modes work without root)
 
-## ⚙️ Requirements & Dependencies
-
-Before running the tool, ensure you have **Python 3.x** installed on your system.
-
-### Installing Dependencies via `pip`
-Install the required dependencies directly using `requirements.txt`:
+## Usage
 
 ```bash
-pip install -r requirements.txt
+python3 burpsuite_tool.py
+```
+
+Then select a mode by entering its number at the `[SELECT] >>` prompt.
+
+## Disclaimer
+
+This tool is intended for educational purposes and for testing systems you own or have explicit written permission to test. Unauthorized interception or scanning of traffic or systems is illegal. The author is not responsible for misuse.
