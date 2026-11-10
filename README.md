@@ -28,8 +28,8 @@ A terminal-based HTTP interception and analysis tool, inspired by Burp Suite. It
 - Root access for the Packet Sniffer mode (other modes work without root)
 
 ## Usage
-
-```bash
+git clone https://github.com/johnpaulnunez333-cloud/burpsuite-tool.git
+cd burpsuite-tool
 python3 burpsuite_tool.py
 ```
 
